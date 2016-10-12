@@ -1,0 +1,46 @@
+*{margin:0; padding:0;}
+ul,li{list-style:none;}
+img{display:block;}
+a{text-decoration:none;}
+input{outline:none;}
+/*--------------------------------hytop--------------------------------*/
+#hytop_back{width:100%; height:480px;  padding-top:528px; background:#ffebed url(../images/img_hy/bg.png) no-repeat top center;}
+#hytop{width:970px; height:460px; padding:10px; background:#ffe3e6; margin:0 auto;}
+#hytop .real img{padding-bottom:10px;}
+#hytop .lbt{width:970px; height:350px; cursor:pointer; overflow:hidden; position:relative;}
+#hytop .lbt a{display:none;}
+#hytop .dot{position:absolute; left:45%; bottom:10px;}
+#hytop .dot li{width:20px; height:20px; border-radius:20px; margin:0 3px; text-align:center; background:#716564; font:10px/20px "微软雅黑"; color:#fbffdd; float:left;}
+#hytop .dot li.on{background:#cc4026; }
+/*--------------------------------hy_cont--------------------------------*/
+#hy_cont{width:100%; height:auto; background:#ffebed; overflow:hidden;}
+#hy_cont dl{width:990px; padding-top:70px; margin:0 auto; overflow:hidden;}
+#hy_cont .f dd a{height:300px; float:left; margin-right:10px; position:relative;}
+#hy_cont .f dd a.margin0{margin:0;}
+#hy_cont #f1 dd a{height:300px;}
+#hy_cont #f1 dd a span{position:absolute; left:270px; top:150px; color:#ff364f; font:bolder 50px/50px Arial;}
+#hy_cont .f dd a{height:415px;}
+#hy_cont .f a span{position:absolute; left:33px; bottom:13px; color:#ffe283; font:bolder 42px/42px Arial;}
+/*--------------------------------contact--------------------------------*/
+#contact{width:100%; height:auto; background:#ffebed; overflow:hidden;}
+#contact .more{width:990px; padding-top:50px; margin:0 auto;}
+#contact .require{width:990px; padding-top:70px; margin:0 auto;}
+#contact .form{width:520px; height:338px; padding:36px 235px; background:#ffe3e6;}
+#contact .form li{height:44px; padding-bottom:11px;}
+#contact .form li label{width:90px; font:12px/44px "微软雅黑"; float:left; letter-spacing:2px; color:#ff364f;}
+#contact .form li input{width:428px; height:42px; border:1px solid #fff; text-indent:10px;}
+#contact .form .btns{padding-left:90px;}
+#contact .form .btns input{width:130px; height:40px; margin:16px 7px 0 0 ; background:#ff364f; cursor: pointer; font:16px/40px "微软雅黑"; color:#fff;}
+/*--------------------------------cooperate--------------------------------*/
+#cooperate_bg{width:100%; height:592px; background:#ffebed url(../images/img_hy/bg2.jpg) no-repeat center 160px;}
+#cooperate{width:990px; height:405px; margin:0 auto;}
+#cooperate dt{width:990px; padding-top:70px;}
+#cooperate dd{width:989px; height:401px; padding:1px 0 0 1px; background:url(../images/img_hy/F7_1.jpg) no-repeat;}
+#cooperate dd a{width:246px; height:121px; padding:0 1px 1px 0; float:left;}
+
+
+
+
+
+
+

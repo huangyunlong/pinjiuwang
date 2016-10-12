@@ -1,0 +1,11 @@
+[
+	{
+		"title":"../images/img_hy/F3_0.jpg",
+		"cont":[
+			{"imgSrc":"../images/img_hy/F3_1.jpg","price":198,"imgHref":"1/html"},
+			{"imgSrc":"../images/img_hy/F3_2.jpg","price":149,"imgHref":"1/html"},
+			{"imgSrc":"../images/img_hy/F3_3.jpg","price":199,"imgHref":"1/html"},
+			{"imgSrc":"../images/img_hy/F3_4.jpg","price":249,"imgHref":"1/html"}
+		]
+	}	
+]

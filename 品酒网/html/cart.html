@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../js/jquery-1.12.4.js"></script>
+    <script src="../js/strOper.js"></script>
+    <link rel="stylesheet" href="../css/cart.css">
+</head>
+<body>
+    <div class="carttop">
+        <div class="w9">
+            <a href="index.html" class="logo2 left"></a>
+            <ul class="stp right alC">
+                <li class="on"><b class="f16">1</b>填写订单</li>
+                <li class="l"></li>
+                <li><b class="f16">2</b>提交订单</li>
+                <li class="l"></li>
+                <li><b class="f16">3</b>客服确认</li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="bgg">
+        <div class="w9">
+            <a href="javascript:;" class="xhb right mr10">联系客服</a>
+            <a href="index.html" class="xhb right mr10">继续购物</a>
+            <a href="javascript:;" class="xhb right mr10">登录</a>
+            <span class="org right mt10 mr10">登录后购物，享会员折扣并积分</span>
+            <div class="clear"></div>
+            <div id="clogin" class="yelbor mt10 hid">
+                <form name="loginc" method="post" id="loginc">
+                    <table width="380" border="0" align="center" class="lh25">
+                        <tbody>
+                        <tr>
+                            <td width="50" height="60" class="f14 c3">帐 号：</td>
+                            <td><input type="text" id="username" name="username" onclick="this.value='';" class="rtext left" value=""></td>
+                        </tr>
+                        <tr>
+                            <td height="60" class="f14 c3">密 码：</td>
+                            <td><input type="password" id="password" name="password" class="rtext left"></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td><input type="button" name="submit" value="登录品酒网" class="left redb hand"> <a class="huib left ml10" href="javascript:;" id="closeLogin">关闭</a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+            <table width="100%" border="0" class="c_tb lh35 bld">
+                <tbody>
+                <tr>
+                    <th with="200" colspan="2"><h2>我的购物车</h2></th>
+                    <th width="10%">单价</th>
+                    <th width="15%">数量</th>
+                    <th width="10%">小计</th>
+                    <th width="5%">操作</th>
+                </tr>
+                <tr><td colspan="3">在线支付满99元包邮，货到付款满298元包邮</td><td colspan="3" align="right">商品总价 &nbsp;<span class="red fB f16px" id="q_xj">¥0.00</span><span class="pl10">运费：<font class="red" id="cship">¥15.00</font></span></td></tr>
+                </tbody>
+            </table>
+            <form action="flow.php?p=done" method="post" name="theForm" id="theForm" class="quform">
+                <table width="100%" border="0" class="c_tb lh30">
+                    <tbody>
+                    <tr>
+                        <th colspan="2"><h2>填写配送信息<em class="f12 pl5 gray">(支持货到货款,保密配送)</em></h2></th>
+                    </tr>
+                    <tr>
+                    </tr><tr>
+                        <td width="100"><b class="c3 pl5">您的姓名：</b></td>
+                        <td><input type="text" errormsg="收货人姓名至少2个汉字,最多8个字符！" placeholder="请准确填写收货人" datatype="s" maxlength="8" m="2" name="consignee" size="30" class="yz inputTx left" id="consignee" value=""><div class="red ert">*必填</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b class="c3 pl5" id="sj_h">手机号码</b>：</td>
+                        <td>
+                            <input type="text" placeholder="11位手机号码" maxlength="15" name="mobile" class="inputTx left" size="30" id="mobile" value=""><div class="red ert">*必填</div><a class="left pl10 U" href="javascript:;" onclick="cjtel(this)">改填座机号码</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b class="c3 pl5">地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;区：</b></td>
+                        <td>
+                            <input type="hidden" name="address_id" value="">
+                            <select name="country" id="selCountries_" onchange="region.changed(this, 1, 'selProvinces}')" class="hid">
+                                <option value="0">请选择</option>
+                                <option value="1" selected="selected">中国</option>
+                            </select>
+                            <select name="province" id="selProvinces" onchange="region.changed(this, 2, 'selCities')" class="left mt5" errormsg="请选择所在省份！">
+                                <option value="" selected="selected">选择省份</option>
+                                <option value="2">北京</option>
+                                <option value="3">安徽</option>
+                                <option value="4">福建</option>
+                                <option value="5">甘肃</option>
+                                <option value="6">广东</option>
+                                <option value="7">广西</option>
+                                <option value="8">贵州</option>
+                                <option value="9">海南</option>
+                                <option value="10">河北</option>
+                                <option value="11">河南</option>
+                                <option value="12">黑龙江</option>
+                                <option value="13">湖北</option>
+                                <option value="14">湖南</option>
+                                <option value="15">吉林</option>
+                                <option value="16">江苏</option>
+                                <option value="17">江西</option>
+                                <option value="18">辽宁</option>
+                                <option value="19">内蒙古</option>
+                                <option value="20">宁夏</option>
+                                <option value="21">青海</option>
+                                <option value="22">山东</option>
+                                <option value="23">山西</option>
+                                <option value="24">陕西</option>
+                                <option value="25">上海</option>
+                                <option value="26">四川</option>
+                                <option value="27">天津</option>
+                                <option value="28">西藏</option>
+                                <option value="29">新疆</option>
+                                <option value="30">云南</option>
+                                <option value="31">浙江</option>
+                                <option value="32">重庆</option>
+                                <option value="33">香港</option>
+                                <option value="34">澳门</option>
+                                <option value="35">台湾</option>
+                            </select>
+                            <select name="city" id="selCities" onchange="region.changed(this,3,'selDistricts')" class="left mt5" errormsg="请选择所在地级市" style="">
+                                <option value="" selected="selected">选择地级市</option>
+                            </select>
+                            <select name="district" id="selDistricts" class="left mt5" errormsg="请选择所在区县！" style="display:none">
+                                <option value="">选择区县</option>
+                            </select>
+                            <div class="red ert" id="sero">*必填</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b class="c3 pl5">详细地址：</b></td>
+                        <td><em id="x_p" class="left"></em><em id="x_c" class="left"></em><em id="x_z" class="left"></em><input type="text" errormsg="街道地址至少4个字！" datatype="s" placeholder="请详细填写地址 小区名 门牌号" maxlength="30" style="width:350px;" m="4" class="yz inputTx left" name="address" id="address" value=""><div class="red ert">*必填</div></td>
+                    </tr>
+                    <tr class="hid">
+                        <td><span class="gray pl5">邮箱：</span></td>
+                        <td><input type="text" name="email" id="email" class="inputTx" size="30" value=""> <span class="gray pl10">选填</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="gray pl5">备注：</span></td>
+                        <td><textarea name="postscript" rows="3" id="postscript" class="bd f12 c_bz"></textarea><span class="gray pl10">选填</span></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <table width="100%" border="0" class="c_tb lh20" id="zhif">
+                    <tbody>
+                    <tr>
+                        <th><b>选择支付方式 </b></th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="zfu zon left"><input type="radio" name="payment" checked="checked" value="5"><b class="c3">货到付款</b></div>
+                            <div class="zfu left"><input type="radio" name="payment" value="1"><b class="c3">支付宝</b></div>
+                            <div class="zfu left"><input type="radio" name="payment" value="9"><b class="c3">网银支付</b></div>
+                            <div class="clear"></div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <p class="mt10" style="display:none;"><span class="f14px"><strong>其它信息</strong></span></p>
+                <table cellspacing="0" cellpadding="0" border="0" class="ptableg mt10" width="100%">
+
+                    <!-- 其他信息
+                    <tr>
+                    <td valign="top" bgcolor="#EFEFEF">订单附言:</td>
+                    <td><textarea name="postscript" cols="80" rows="3" id="postscript" class="mt10 mb10" style="border:1px solid #ccc;"></textarea></td>
+                    </tr>
+                    -->
+                </table>
+                <div class="cart_xj lh35">
+                    <table border="0">
+                        <tbody><tr>
+                            <td width="80"><strong>红包:</strong></td>
+                            <td>
+                                <input name="bonus_sn" type="text" class="h_b" size="15" value="">
+                                <input name="validate_bonus" type="button" class="ybtn" value="点击验证" onclick="validateBonus(document.forms['theForm'].elements['bonus_sn'].value)"></td>
+                        </tr>
+                        <tr>
+                        </tr>
+                        <tr>
+                        </tr>
+                        </tbody></table>
+                </div>
+                <div id="ECS_ORDERTOTAL" class="cart_xj lh35 alR">
+                    <table border="0" width="100%">
+                        <tbody><tr>
+                            <td align="left">
+                                <span class="pr10">商品总价:</span> <span class="red fB f16px pr10" id="zj">¥0.00</span>
+                                + 邮费: <span class="red fB f16px pr10" id="yf">¥15.00</span>
+
+
+                            </td>
+                            <td align="right"><span class="red fB right" id="amount">¥15.00</span><span class="right pr10">最终支付金额:</span>
+                            </td>
+                        </tr>
+                        </tbody></table></div>
+                <input type="hidden" name="step" value="done">
+                <input type="hidden" name="referertype" value="">
+                <table width="100%" border="0" class="mt15">
+                    <tbody>
+                    <tr>
+                        <td width="130"><a class="xhb" style="padding:8px 0;" href="javascript:window.history.go(-1);">&lt;&lt;返回继续购物</a></td>
+                        <td align="right"><input type="submit" class="b_sub hand" value="提交订单"></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="clear"></div>
+            </form>
+        </div>
+    </div>
+    <script src="../js/cart.js"></script>
+</body>
+</html>

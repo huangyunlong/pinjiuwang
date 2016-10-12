@@ -1,0 +1,223 @@
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0;  font-family:"微软雅黑"; font-size:12px;}
+fieldset, img { border:none; }
+ul, ol { list-style:none; }
+a {text-decoration:none; }
+
+
+.content_back{
+	background:#eee;
+	overflow: hidden;
+}
+.content{
+	width:1190px;
+	height:921px;
+	background: #eee;
+	margin: 0 auto;
+	margin-top:10px;
+}
+.menu{
+	width:100%;
+	height:22px;
+	line-height:22px;
+	margin:20px 0;
+	background:#fff;
+	border-top:1px solid #C40000;
+	padding: 5px 0;
+}
+.menu em{
+	font-style:normal;
+}
+.menu a{
+	height:20px;
+	float:left;
+	display: block;
+	color:black;
+}
+.padding10{
+	padding-left:10px;
+}
+.menu ul{
+	float:left;
+}
+.menu ul li{
+	float:left;
+	margin:0 10px;
+}
+.menu ul li a{
+	color:black;
+	font-weight: normal;
+}
+.menu ul li.on a{
+	background-position: right -410px;
+	font-weight: bold;
+	color:red;
+}
+
+/*.p_sort.up{*/
+	/*background-position: right -410px;*/
+	/*font-weight: bold;*/
+	/*color:red;*/
+/*}*/
+/*.p_sort.up.active{*/
+	/*background-position: right -382px;*/
+	/*font-weight: bold;*/
+	/*color:red;*/
+	/*display: block;*/
+/*}*/
+.p_sort{
+	padding:0 18px 0 0;
+	background: url(../images/list/q.png) no-repeat right -357px;
+	border:none;
+}
+.p_sort:hover{
+	text-decoration: underline;
+}
+.p_sort.active{
+	color:red;
+}
+
+.menuright{
+	padding-right:5px;
+	float:right;
+}
+.menuright .left1{
+	float:left;
+	color:#ccc;
+}
+.menuright a{
+	height:20px;
+	width:20px;
+	border:1px solid #ccc;
+	float:left;
+	margin-left: 5px;
+	 background:#fff url("../images/list/q.png") no-repeat 50% -436px; 
+}
+.menuright a.pre{
+	background-position:50% -459px;
+}
+/*下面的图像问题*/
+
+.show{
+	width:100%;
+	overflow: hidden;
+	background:#eee ;
+}
+
+.box{
+	width:110%;
+	float:left;
+	background:#eee ;
+	overflow: hidden;
+}
+.showcontent{
+	width:110%;
+	float:left;
+	background:#eee ;
+	overflow: hidden;
+	display: none;
+}
+.showcontent.active{
+	display: block;
+}
+
+.showcontent dl{
+	width:220px;
+	height:350px;
+	background: #fff;
+	border:1px solid #f6f6f6;
+	display: inline;
+	margin: 0 20px 20px 0;
+	float:left;
+	color:#999;
+	line-height:18px;
+	
+}
+.showcontent dl:hover{
+	border:1px solid #c40000;
+}
+.showcontent dt{
+	width:200px;
+	height:200px;
+	float:left;
+	display: inline;
+	margin:20px 0 10px 10px;
+	position: relative;
+	text-align: center;
+}
+.showcontent dl dt img{
+	width:120px;
+	height:180px;
+	display: inline-block;
+}
+.showcontent dl dd{
+	width:200px;
+	padding:0 10px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.showcontent dl dd .xj{
+	font-size: 18px;
+	padding-right: 10px;
+	color:#c40000;
+}
+.showcontent dl dd .jj{
+	text-decoration: line-through;
+	color:#999;
+}
+.showcontent dl dd.ms{
+	height:34px;
+	margin: 15px 0;
+	width:190px;
+}
+.showcontent dl dd.ms a{
+	color:black;
+}
+.showcontent dl dd.ms a:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.showcontent dl dd.sa{
+	margin-top:10px;
+	border-top:1px solid #e5e5e5;
+	height:35px;
+	line-height:35px;
+}
+.showcontent dl dd.sa span{
+	float:left;
+	display: block;
+	width:35%;
+	padding:0 2px;
+	border-right:1px solid #e5e5e5;
+	overflow: hidden;
+}
+.showcontent dl dd.sa span+span:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.showcontent dl dd.sa em{
+	font-style: normal;
+	color:crimson;
+}
+.showcontent dl dd.sa i{
+	font-style:normal;
+	color:dodgerblue;
+}
+.showcontent dl dd.sa a{
+	width:48px;
+	height:36px;
+	display: block;
+	float:left;
+	background: url(../images/list/q.png) no-repeat 50% -486px;
+	text-align: center;
+}
+
+.searchbtn{
+	height:52px;
+	background:#eee;
+	padding-top:12px;
+}
+.searchbtn form{
+	margin-left:400px;
+}

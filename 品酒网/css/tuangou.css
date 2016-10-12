@@ -1,0 +1,147 @@
+
+/*------banner-----*/
+.banner1{
+    height:545px;
+    background:url(../images/banner-bg.jpg) no-repeat center center #970102;
+    text-align:center;
+}
+.banner1 a{
+    width:900px;
+    height:550px;
+    display:inline-block;
+}
+/*------brand-----*/
+#brand-back{
+    height:100%;
+    background:#970102;
+}
+.brand{
+    width:990px;
+    height:100%;
+    margin:0 auto;
+}
+.brand .member{
+    background-color: #ba0304;
+    text-align: center;
+    padding:35px 0;
+}
+.brand img{
+    display:inline;
+}
+.brand .vip{
+    background:url(../images/rep.png) repeat-x;
+    padding: 50px 0 30px 0;
+    margin-top: 30px;
+    text-align:center;
+}
+.brand .tit{
+    background-color: #bc0607;
+    padding: 15px 0;
+    text-align: center;
+}
+.brand .company{
+    background: #f5efd9 url(../images/p10.png) no-repeat right 100px;
+    padding: 20px;
+    line-height: 65px;
+    text-align:center;
+    margin-bottom:70px;
+}
+.brand .company h2{
+    color: #936b1a;
+    font-size: 24px;
+}
+.brand .company span{
+    width:100px;
+    line-height:60px;
+    display:inline-block;
+    text-align:left;
+    font-size:12px;
+    color:#555;
+}
+.brand .company input{
+    width: 310px;
+    height: 32px;
+    line-height: 32px;
+    border: 1px solid #555;
+    background-color: #f5efd9;
+    font-size: 12px;
+    color:#a9a9a9;
+}
+.brand .company a{
+    width:150px;
+    height:45px;
+    background-color: #aa0700;
+    line-height:45px;
+    text-align: center;
+    display:block;
+    font-size: 18px;
+    color: #fff;
+    margin-left:370px;
+    margin-top:20px;
+}
+.brand .custom{
+    background-color: #ae1317;
+    border: 1px solid #c2171b;
+    position: relative;
+    padding: 30px;
+}
+.brand .custom i{
+    position: absolute;
+    top: -10px;
+    left: 30px;
+}
+.brand .custom a img{
+    margin: 12px;
+    border: 1px solid #5e0c0f
+}
+.brand .viptit{
+    margin:35px 0;
+}
+.brand .chanp{
+    width: 990px;
+    height: 320px;
+    overflow: hidden;
+}
+.brand .chanp a{
+    display: inline;
+    float: left;
+    width: 20%;
+    float: left;
+    overflow: hidden;
+    text-align: center;
+    line-height: 25px;
+    color: #fff;
+}
+.brand .chanp a img{
+    padding-bottom: 15px;
+}
+.brand .chanp .ccy{
+    color:#e3ae63;
+}
+.brand .chanp .ccy .f16{
+    font-size:16px;
+}
+.brand .chanp a:hover{
+    text-decoration:underline;
+}
+/*----------浮动-----------*/
+.fudong{
+    background: url(../images/fdbj.jpg);
+    width: 142px;
+    height: 374px;
+    position: fixed;
+    top: 160px;
+    right: 5px;
+    z-index: 10;
+}
+.fudong-qq{
+    margin: auto;
+    padding: 55px 0 55px 0;
+    width: 80px;
+    height: auto;
+}
+.fudong-qq img{
+    margin-bottom:15px;
+}
+
+
